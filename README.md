@@ -1,3 +1,20 @@
+
+# Some ScreenShots
+
+![Photo 1 ](https://github.com/goktasyusuf/ValorantApiWithReact/blob/'main'/images/1.PNG)
+
+![Photo 2 ](https://github.com/goktasyusuf/ValorantApiWithReact/blob/'main'/images/2.PNG)
+
+
+
+# GIF
+
+![Gif 1](https://github.com/goktasyusuf/ValorantApiWithReact/blob/'main'/images/1.gif)
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
