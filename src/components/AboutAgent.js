@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
-const AboutAgent = (props) => {
+const AboutAgent = () => {
   let userId = useParams();
 
   const [agent, setAgent] = useState({});
@@ -46,8 +46,8 @@ const AboutAgent = (props) => {
 
         <br />
         <div className="row">
-          <div className="col-6">
-            <div className="card p-3" style={{ backgroundColor: "#001a66" }}>
+          <div className="col-lg-6 col-md-12">
+            <div className="card mb-2 p-3" style={{ backgroundColor: "#001a66" }}>
               <div className="row">
                 <div className="col-4">
                   <img
@@ -94,10 +94,10 @@ const AboutAgent = (props) => {
             <br />
             <br />
             <div
-              className="d-flex card p-5"
+              className="d-flex card p-5 mb-5"
               style={{ backgroundColor: "#001a66" }}
             >
-              <div className="alt_kısım col-6" style={{ margin: "auto" }}>
+              <div className="alt_kısım col-lg-6" style={{ margin: "auto"}}>
                 <img
                   src={agent?.fullPortrait}
                   style={{ maxWidth: "100%", display: "block" }}
@@ -126,16 +126,16 @@ const AboutAgent = (props) => {
               </div>
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-lg-6">
             <div className="row">
               {agent?.abilities?.map((ability) => (
-                <div className="col-12" key={ability.slot}>
+                <div className="col-lg-12" key={ability.slot}>
                   <div
                     className="card mb-4 p-3"
                     style={{ backgroundColor: "#001a66" }}
                   >
                     <div className="row">
-                      <div className="col-4">
+                      <div className="col-lg-4">
                         <img
                           style={{
                             width: "100%",
@@ -145,7 +145,7 @@ const AboutAgent = (props) => {
                           alt="No Image"
                         />
                       </div>
-                      <div className="col-8">
+                      <div className="col-lg-8">
                         <h5 style={{ color: "#afff46" }}>
                           {ability?.displayName}
                         </h5>
@@ -153,7 +153,7 @@ const AboutAgent = (props) => {
                         <hr />
                         <h6 className="text-white">{ability?.slot}</h6>
                         <p style={{ color: "#afff46" }}>
-                          {ability.description}
+                          {ability?.description}
                         </p>
                       </div>
                       <div className="containercakma mt-5">

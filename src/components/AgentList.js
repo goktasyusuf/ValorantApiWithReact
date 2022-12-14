@@ -5,7 +5,7 @@ const AgentList = (props) => {
   return (
     <div className="row">
       {props.agents.map((agent) => (
-        <div className="col-lg-4" key={agent?.uuid}>
+        <div className="col-lg-4 col-md-6" key={agent?.uuid}>
           <div className="card mb-4">
             <img src={agent.displayIcon} alt="Agent" />
 
