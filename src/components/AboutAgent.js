@@ -40,7 +40,7 @@ const AboutAgent = () => {
             >
               Home Page
             </Link>
-            <span style={{ color: "white" }}> ----> {agent.displayName}</span>
+            <span style={{ color: "white" }}> ---- {agent.displayName}</span>
           </div>
         </div>
 
