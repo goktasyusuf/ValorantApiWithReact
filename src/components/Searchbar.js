@@ -1,23 +1,23 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
- class Searchbar extends Component {
+const Searchbar = (props) => {
+  const handleSubmitForm = (e) => {
+    e.preventDefault();
+  };
 
-handleSubmitForm(e) {
-  e.preventDefault();
-}
-
-  render() {
-    return (
-      <form onSubmit={this.handleSubmitForm}>
-        <div className='form-row mb-3 mt-2'>
+  return (
+    <form onSubmit={handleSubmitForm}>
+      <div className="form-row mb-3 mt-2">
         <div className="col-12">
-          <input 
-          onChange={this.props.searchMovie}
-          type="text" className='form-control' placeholder='Search An Agent...' />
+          <input
+            onChange={props.searchMovie}
+            type="text"
+            className="form-control"
+            placeholder="Search An Agent..."
+          />
         </div>
-        </div>
-      </form>
-    )
-  }
-}
+      </div>
+    </form>
+  );
+};
 export default Searchbar;
